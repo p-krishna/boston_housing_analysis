@@ -1,0 +1,25 @@
+---
+title: "Boston Housing Analysis"
+author: "Krishna P"
+date: "7 March 2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library('knitr')
+library('pastecs')
+```
+
+
+
+```{r read_data , results='asis'}
+df_input <- read.csv('../data/input/housing.csv')
+str(df_input)
+```
+
+```{r}
+stat.desc(df_input)
+```
+
